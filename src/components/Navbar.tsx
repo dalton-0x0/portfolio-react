@@ -1,18 +1,17 @@
-import {
-  AppBar,
-  Toolbar,
-  Typography,
-  IconButton,
-  Box,
-  Drawer,
-  List,
-  ListItem,
-  ListItemText,
-} from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
-import { Menu as MenuIcon, Close as CloseIcon } from "@mui/icons-material";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import IconButton from "@mui/material/IconButton";
+import Drawer from "@mui/material/Drawer";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemText from "@mui/material/ListItemText";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
